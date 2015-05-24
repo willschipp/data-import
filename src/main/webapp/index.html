@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Upload App</title>
+<link rel='stylesheet' href='/webjars/bootswatch-paper/3.3.1+2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='/webjars/font-awesome/4.2.0/css/font-awesome.min.css'>
+</head>
+<body>
+
+		<div class="container">
+		
+			<div class="row">
+				<h3>Upload App</h3>
+			</div>
+		
+			<div class="row">
+				<div class="col-md-6">
+					<!-- form -->
+					<form class="form" id="customerForm" method="POST" enctype="multipart/form-data" action="/data/amqp">
+						<div class="input-group">
+							<label for="file">File</label>
+							<input type="file" id="firstName" name="file" class="form-control"/>
+						</div>
+						<div class="input-group">
+							<button id="submitButton" type="submit" class="btn btn-default">Save</button>
+						</div>															
+					</form>
+				</div>
+				<div class="col-md-6">
+					&nbsp;
+				</div>
+			</div>
+		
+		</div>
+
+
+        <script type="text/javascript" src="/webjars/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="/webjars/bootswatch-paper/3.3.1+2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
